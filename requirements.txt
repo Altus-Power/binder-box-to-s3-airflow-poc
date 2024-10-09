@@ -1,0 +1,4 @@
+boxsdk[jwt]
+apache-airflow
+boto3
+certifi
