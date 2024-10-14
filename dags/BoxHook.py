@@ -38,19 +38,19 @@ class BoxHook(BaseHook):
 
         # )
 
-        import requests
-
-        url = "https://api.box.com/2.0/folders/170674182181?limit=1000"
-
-        payload = {}
-        headers = {
-            'Authorization': 'Bearer huTAiFDS6xF3zbSvqQqY4PPLwTjydDQB',
-            'Cookie': 'box_visitor_id=66f52675ed6306.69303985; site_preference=desktop; uid=36777589243'
-        }
-
-        response = requests.request("GET", url, headers=headers, data=payload,verify=False)
-
-        print(response.text)
+        # import requests
+        #
+        # url = "https://api.box.com/2.0/folders/170674182181?limit=1000"
+        #
+        # payload = {}
+        # headers = {
+        #     'Authorization': 'Bearer huTAiFDS6xF3zbSvqQqY4PPLwTjydDQB',
+        #     'Cookie': 'box_visitor_id=66f52675ed6306.69303985; site_preference=desktop; uid=36777589243'
+        # }
+        #
+        # response = requests.request("GET", url, headers=headers, data=payload,verify=False)
+        #
+        # print(response.text)
 
         oauth = OAuth2(
             client_id=client_id,
