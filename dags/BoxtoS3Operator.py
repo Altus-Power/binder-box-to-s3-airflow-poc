@@ -36,7 +36,7 @@ class BoxtoS3Operator(BaseOperator):
     def save_file_to_s3(self, list_path_file, file_content):
         s3_client = S3Hook("s3_conn")
         full_path = '/'.join(list_path_file)
-        s3_client.load_bytes(Bucket=self.output_s3_bucket, Key=full_path, Body=file_content)
+        s3_client.load_bytes(bytes_data=file_content, key=full_path, bucket_name=self.output_s3_bucket)
 
     def execute(self, context):
         bh = BoxHook()
