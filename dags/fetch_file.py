@@ -12,7 +12,7 @@ default_args = {
 with DAG("box_to_s3_dag", default_args=default_args, schedule_interval=None) as dag:
     box_to_s3_task = BoxtoS3Operator(
         task_id="box_to_s3_transfer",
-        input_box_file_id="1669641337704",
+        input_box_file_id="1672811082916",
         output_s3_bucket="altus-document-testing",
     )
 
