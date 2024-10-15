@@ -9,7 +9,7 @@ default_args = {
     "retries": 1,
 }
 
-with DAG("box_to_s3_dag", default_args=default_args, schedule_interval="0 0 * * *") as dag:
+with DAG("box_to_s3_dag", default_args=default_args, schedule_interval=None) as dag:
     box_to_s3_task = BoxtoS3Operator(
         task_id="box_to_s3_transfer",
         input_box_file_id="1669641337704",
