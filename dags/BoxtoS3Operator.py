@@ -6,7 +6,7 @@ import pendulum
 from airflow.hooks.S3_hook import S3Hook
 from airflow.models import BaseOperator, Variable
 from airflow.utils.decorators import apply_defaults
-from Hook import BoxHook
+from BoxHook import BoxHook
 
 est_tz = pendulum.timezone("EST5EDT")
 log = logging.getLogger(__name__)
