@@ -13,7 +13,7 @@ with DAG(
         bash_command="echo hello"
     )
 
-    @task
+    @task()
     def airflow():
         print("airflow")
 
